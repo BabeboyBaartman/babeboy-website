@@ -9,6 +9,8 @@ A static, multi-page marketing website for **Babeboy Fashion & Lifestyle**, a fi
 1. [Overview](#overview)
 2. [Tech Stack](#tech-stack)
 3. [Project Structure](#project-structure)
+3. [Screenshot evidence](#screenshot-evidence)
+3. [Changelog](#changelog)
 
 | | |
 |---|---|
@@ -59,7 +61,7 @@ babeboy-website/
 └── README.md              # This file
 ```
 
-### Screenshot evidence
+## Screenshot evidence
 
 The following screenshots were captured from the completed Part 2 build at representative viewport sizes. They demonstrate the responsive behaviour on different device classes.
 
@@ -78,7 +80,7 @@ The following screenshots were captured from the completed Part 2 build at repre
 
 ## Changelog
 
-### Part 2 — 18 September 2026
+### Part 2
 
 - Added explicit **mobile, tablet and desktop breakpoints** in `css/style.css`.
 - Added responsive two-column tablet and four-column desktop product/gallery layouts.
