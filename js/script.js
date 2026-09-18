@@ -31,6 +31,34 @@ function loadProducts(targetElementId, limit) {
 }
 
 // This function builds the HTML for each product card.
+
+function createResponsiveImage(product) {
+  const src = product.image;
+  const alt = product.name.replace(/"/g, '&quot;');
+  const remote = src.match(/^(https:\/\/loremflickr\.com\/)\d+\/\d+\/(.+)$/);
+
+  if (remote) {
+    const base = remote[1];
+    const rest = remote[2];
+    return '<picture>' +
+      '<source media="(max-width: 39.99em)" srcset="' + base + '480/360/' + rest + ' 480w" sizes="94vw">' +
+      '<source media="(max-width: 63.99em)" srcset="' + base + '768/540/' + rest + ' 768w" sizes="46vw">' +
+      '<img src="' + src + '" srcset="' + base + '400/400/' + rest + ' 400w, ' + base + '768/540/' + rest + ' 768w" sizes="(max-width: 63.99em) 46vw, 23vw" alt="' + alt + '" loading="lazy">' +
+      '</picture>';
+  }
+
+  const match = src.match(/^images\/(.+)\.jpg$/);
+  if (match) {
+    const stem = match[1];
+    return '<picture>' +
+      '<source type="image/webp" srcset="images/' + stem + '-240w.webp 240w, images/' + stem + '-480w.webp 480w, images/' + stem + '-768w.webp 768w" sizes="(max-width: 39.99em) 94vw, (max-width: 63.99em) 46vw, 23vw">' +
+      '<img src="' + src + '" srcset="' + src + ' 480w" sizes="(max-width: 39.99em) 94vw, (max-width: 63.99em) 46vw, 23vw" alt="' + alt + '" loading="lazy">' +
+      '</picture>';
+  }
+
+  return '<img src="' + src + '" alt="' + alt + '" loading="lazy">';
+}
+
 function displayProducts(products, container) {
  
   container.innerHTML = "";
@@ -39,8 +67,9 @@ function displayProducts(products, container) {
     const card = document.createElement("div");
     card.className = "card";
 
+    const imageMarkup = createResponsiveImage(product);
     card.innerHTML =
-      '<img src="' + product.image + '" alt="' + product.name + '">' +
+      imageMarkup +
       '<div class="card-body">' +
       '<span class="category-tag">' + product.category + "</span>" +
       "<h3>" + product.name + "</h3>" +
