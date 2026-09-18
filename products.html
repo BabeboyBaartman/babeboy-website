@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Babeboy Fashion & Lifestyle | Products</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">BABE<span>BOY</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="offers.html">Special Offers</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+      </ul>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" style="padding: 50px 0;">
+    <div class="container">
+      <div class="hero-text">
+        <h1>Our <span>Products</span></h1>
+        <p>Browse our full range of clothing, shoes and accessories.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+
+      <!-- ===== CATEGORY FILTER BUTTONS ===== -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-category="All">All</button>
+        <button class="filter-btn" data-category="T-Shirts">T-Shirts</button>
+        <button class="filter-btn" data-category="Jeans">Jeans</button>
+        <button class="filter-btn" data-category="Jackets">Jackets</button>
+        <button class="filter-btn" data-category="Sneakers">Sneakers</button>
+        <button class="filter-btn" data-category="Caps">Caps</button>
+        <button class="filter-btn" data-category="Bags">Bags</button>
+        <button class="filter-btn" data-category="Accessories">Accessories</button>
+      </div>
+
+      <!-- ===== PRODUCT GRID (filled in by JavaScript) ===== -->
+      <div class="grid" id="productGrid">
+        <p>Loading products...</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h4>Babeboy Fashion &amp; Lifestyle</h4>
+        <p>Affordable, trendy fashion for young adults in Bloemfontein, Free State.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" rel="noopener">FB</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener">IG</a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener">TT</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="currentYear"></span> Babeboy Fashion &amp; Lifestyle. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="data/products.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    // Load all products into the "productGrid" container
+    loadProducts("productGrid");
+    // Turn on the category filter buttons
+    setupFilterButtons();
+  </script>
+</body>
+</html>

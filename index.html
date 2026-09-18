@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Babeboy Fashion & Lifestyle | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER / NAVIGATION ===== -->
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">BABE<span>BOY</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="offers.html">Special Offers</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+      </ul>
+
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-text">
+        <h1>Welcome to <span>Babeboy</span> Fashion &amp; Lifestyle</h1>
+        <p>
+          Bloemfontein's home of affordable, trendy fashion for young adults.
+          From T-shirts and jeans to sneakers and accessories, we help you
+          look good without breaking the bank.
+        </p>
+        <div class="hero-buttons">
+          <a href="products.html" class="btn btn-gold">Shop Now</a>
+          <a href="contact.html" class="btn btn-outline">Contact Us</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/store.jpg" alt="Fashionable clothing at Babeboy Fashion & Lifestyle">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SHORT INTRO ===== -->
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>Who We <span>Are</span></h2>
+        <p>Affordable and trendy fashion, made for you.</p>
+      </div>
+      <p style="max-width: 700px; margin: 0 auto; text-align: center;">
+        Babeboy Fashion &amp; Lifestyle is a retail store based in Bloemfontein,
+        Free State, offering fashionable clothing, shoes and accessories for
+        young adults. We believe everyone deserves to look and feel great,
+        which is why we keep our prices affordable without compromising on style.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED PRODUCTS ===== -->
+  <section class="bg-light">
+    <div class="container">
+      <div class="section-title">
+        <h2>Featured <span>Products</span></h2>
+        <p>A sneak peek at some of our best sellers</p>
+      </div>
+
+      <!-- Products are loaded here automatically using JavaScript -->
+      <div class="grid" id="featuredProducts">
+        <p>Loading products...</p>
+      </div>
+
+      <div style="text-align:center; margin-top: 35px;">
+        <a href="products.html" class="btn btn-gold">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SPECIAL OFFER TEASER ===== -->
+  <section>
+    <div class="container">
+      <div class="offer-card">
+        <h3>Current Promotion</h3>
+        <p>Get 15% off all sneakers this month only! Visit our store or check our Special Offers page for more.</p>
+        <br>
+        <a href="offers.html" class="btn btn-gold">See All Offers</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h4>Babeboy Fashion &amp; Lifestyle</h4>
+        <p>Affordable, trendy fashion for young adults in Bloemfontein, Free State.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" rel="noopener">FB</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener">IG</a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener">TT</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="currentYear"></span> Babeboy Fashion &amp; Lifestyle. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="data/products.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    // Load only 4 featured products on the homepage
+    loadProducts("featuredProducts", 4);
+  </script>
+</body>
+</html>

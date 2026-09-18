@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Babeboy Fashion & Lifestyle | Enquiry</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">BABE<span>BOY</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="offers.html">Special Offers</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="enquiry.html" class="active">Enquiry</a></li>
+      </ul>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" style="padding: 50px 0;">
+    <div class="container">
+      <div class="hero-text">
+        <h1>Product <span>Enquiry</span></h1>
+        <p>Have a question about one of our products? Send us a message.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="form-wrapper">
+        <form id="enquiryForm">
+
+          <div class="form-group">
+            <label for="enquiryName">Full Name</label>
+            <input type="text" id="enquiryName" name="enquiryName" required>
+          </div>
+
+          <div class="form-group">
+            <label for="enquiryEmail">Email Address</label>
+            <input type="email" id="enquiryEmail" name="enquiryEmail" required>
+          </div>
+
+          <div class="form-group">
+            <label for="enquiryPhone">Telephone Number</label>
+            <input type="tel" id="enquiryPhone" name="enquiryPhone" required>
+          </div>
+
+          <div class="form-group">
+            <label for="enquiryProduct">Product of Interest</label>
+            <select id="enquiryProduct" name="enquiryProduct" required>
+              <option value="">-- Select a Category --</option>
+              <option value="T-Shirts">T-Shirts</option>
+              <option value="Jeans">Jeans</option>
+              <option value="Jackets">Jackets</option>
+              <option value="Sneakers">Sneakers</option>
+              <option value="Caps">Caps</option>
+              <option value="Bags">Bags</option>
+              <option value="Accessories">Accessories</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="enquiryMessageBox">Your Message</label>
+            <textarea id="enquiryMessageBox" name="enquiryMessageBox" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-gold">Submit Enquiry</button>
+
+          <div class="form-message" id="enquiryMessage"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h4>Babeboy Fashion &amp; Lifestyle</h4>
+        <p>Affordable, trendy fashion for young adults in Bloemfontein, Free State.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" rel="noopener">FB</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener">IG</a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener">TT</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="currentYear"></span> Babeboy Fashion &amp; Lifestyle. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

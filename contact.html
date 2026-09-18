@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Babeboy Fashion & Lifestyle | Contact Us</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">BABE<span>BOY</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="offers.html">Special Offers</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+      </ul>
+      <div class="menu-toggle" id="menuToggle">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" style="padding: 50px 0;">
+    <div class="container">
+      <div class="hero-text">
+        <h1>Contact <span>Us</span></h1>
+        <p>We'd love to hear from you. Reach out any time.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container contact-grid">
+
+      <!-- ===== CONTACT DETAILS & MAPS ===== -->
+      <div>
+        <div class="contact-info-item">
+          <h4>Telephone</h4>
+          <p>051 123 4567</p>
+        </div>
+        <div class="contact-info-item">
+          <h4>Email</h4>
+          <p>info@babeboyfashion.co.za</p>
+        </div>
+        <div class="contact-info-item">
+          <h4>Physical Address (Main Store)</h4>
+          <p>12 Fashion Street, Bloemfontein CBD, Free State, South Africa</p>
+        </div>
+        <div class="contact-info-item">
+          <h4>Business Hours</h4>
+          <p>Monday - Friday: 08:00 - 18:00<br>
+             Saturday: 09:00 - 15:00<br>
+             Sunday &amp; Public Holidays: Closed</p>
+        </div>
+        <div class="contact-info-item">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener">FB</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener">IG</a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener">TT</a>
+          </div>
+        </div>
+
+        <!-- Main store map -->
+        <div class="contact-info-item">
+          <h4>Main Store Location</h4>
+          <div class="map-wrapper">
+            <iframe
+              src="https://www.google.com/maps?q=Bloemfontein+CBD,+Free+State,+South+Africa&output=embed"
+              loading="lazy"
+              title="Main store location map">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Second location map (as required) -->
+        <div class="contact-info-item">
+          <h4>Second Location - Mimosa Mall Kiosk</h4>
+          <p>Mimosa Mall, Kimberley Road, Bloemfontein, Free State</p>
+          <div class="map-wrapper">
+            <iframe
+              src="https://www.google.com/maps?q=Mimosa+Mall,+Bloemfontein,+South+Africa&output=embed"
+              loading="lazy"
+              title="Second location map - Mimosa Mall">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== CONTACT FORM ===== -->
+      <div>
+        <div class="form-wrapper">
+          <h3 style="margin-bottom: 20px;">Send Us a Message</h3>
+          <form id="contactForm">
+
+            <div class="form-group">
+              <label for="contactName">Full Name</label>
+              <input type="text" id="contactName" name="contactName" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail">Email Address</label>
+              <input type="email" id="contactEmail" name="contactEmail" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contactSubject">Subject</label>
+              <input type="text" id="contactSubject" name="contactSubject" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessageBox">Message</label>
+              <textarea id="contactMessageBox" name="contactMessageBox" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold">Send Message</button>
+
+            <div class="form-message" id="contactMessage"></div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h4>Babeboy Fashion &amp; Lifestyle</h4>
+        <p>Affordable, trendy fashion for young adults in Bloemfontein, Free State.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" rel="noopener">FB</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener">IG</a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener">TT</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="currentYear"></span> Babeboy Fashion &amp; Lifestyle. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
