@@ -59,3 +59,25 @@ babeboy-website/
 │
 └── README.md              # This file
 ```
+## Changelog
+
+### Part 2 — 18 September 2026
+
+- Added explicit **mobile, tablet and desktop breakpoints** in `css/style.css`.
+- Added responsive two-column tablet and four-column desktop product/gallery layouts.
+- Added mobile single-column layouts and improved mobile filter-button wrapping.
+- Converted responsive typography and spacing to relative `rem`/`em` units where appropriate.
+- Changed layout sizing to use percentage-based container widths and fluid Grid/Flexbox behaviour.
+- Added `<picture>`, `srcset`, and `sizes` responsive-image patterns to static page imagery.
+- Updated JavaScript product rendering to generate responsive image markup dynamically.
+- Added local WebP image variants at multiple widths for the supplied JPG assets.
+- Added `loading="lazy"` to content images to reduce unnecessary initial image loading.
+- Added desktop, tablet and mobile screenshot evidence under `screenshots/` and documented the device/viewport sizes in this README.
+- Updated the README with Part 2 implementation details, responsive-design verification, changelog entries and refreshed references.
+
+### Part 1 feedback edits carried forward / addressed in Part 2
+
+- Retained the **mobile hamburger navigation** and expanded it into a breakpoint-based responsive navigation system rather than replacing the existing interaction.
+- Retained the existing **product category filtering**, enquiry form feedback, contact form feedback and automatic footer year functionality while updating product image rendering for responsive delivery.
+- Retained the existing **seven-page multi-page structure** and plain HTML/CSS/JavaScript approach so the Part 2 changes remain compatible with the original project architecture.
+- Preserved the existing black, gold, white and grey visual design system while improving spacing and layout behaviour across screen sizes.
