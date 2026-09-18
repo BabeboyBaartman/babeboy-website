@@ -354,7 +354,7 @@ section {
   opacity: 0.8;
 }
 
-/* ---------- Forms (Enquiry & Contact) ---------- */
+/* ---------- Forms  ---------- */
 .form-wrapper {
   max-width: 40.625rem;
   margin: 0 auto;
@@ -492,7 +492,7 @@ footer {
 }
 
 /* ---------- Responsive Design: mobile, tablet and desktop ---------- */
-/* Mobile-first base phones below 48em (768px). */
+/* Mobile-first (768px). */
 
 @media (min-width: 48em) {
   /* Tablet: 768px and up */
